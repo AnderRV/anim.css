@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="anim.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="test_container">
+            <div id="test_box">
+                <p>I fight for the user.</p>
+            </div>
+        </div>
+
+        <a class="button" data-test=''>cancel</a>
+        <a class="button" data-test='test'>test</a>
+
+        <br /><br /><br /><br />
+
+        <h3>TEST</h3>
+        <a class="button" data-test='test0' >test0 </a>
+        <a class="button" data-test='test1' >test1 </a>
+        <a class="button" data-test='test2' >test2 </a>
+        <a class="button" data-test='test3' >test3 </a>
+        <a class="button" data-test='test4' >test4 </a>
+        <a class="button" data-test='test5' >test5 </a>
+        <a class="button" data-test='test6' >test6 </a>
+        <a class="button" data-test='test7' >test7 </a>
+        <a class="button" data-test='test8' >test8 </a>
+        <a class="button" data-test='test9' >test9 </a>
+
+        <h3>TEST2</h3>
+        <a class="button" data-test='test10'>test10</a>
+        <a class="button" data-test='test11'>test11</a>
+        <a class="button" data-test='test12'>test12</a>
+        <a class="button" data-test='test13'>test13</a>
+        <a class="button" data-test='test14'>test14</a>
+        <a class="button" data-test='test15'>test15</a>
+        <a class="button" data-test='test16'>test16</a>
+        <a class="button" data-test='test17'>test17</a>
+        <a class="button" data-test='test18'>test18</a>
+        <a class="button" data-test='test19'>test19</a>
+        <a class="button" data-test='test20'>test20</a>
+
+        <h3>TEST3</h3>
+        <a class="button" data-test='test21'>test21</a>
+        <a class="button" data-test='test22'>test22</a>
+        <a class="button" data-test='test23'>test23</a>
+        <a class="button" data-test='test24'>test24</a>
+        <a class="button" data-test='test25'>test25</a>
+        <a class="button" data-test='test26'>test26</a>
+        <a class="button" data-test='test27'>test27</a>
+        
+        <h3>CHAINED</h3>
+        <a class="button" data-test='test_c22_1'>test1_c</a>
+    </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    var anim = $('#test_box');
+    function testAnim(x) {
+        anim.removeClass().addClass(x).on('webkitAnimationEnd', function() {
+            //anim.removeClass();
+        });
+    };
+
+    $(document).ready(function(){
+        $('a[data-test]').click(function(){
+            var anim = $(this).attr('data-test');
+            testAnim(anim);
+        });
+    });
+
+    $(function(){
+        $pos = $('.test_container').offset().top - 0;
+
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() >= $pos) {
+                $('.test_container').addClass('fixed');
+            } else {
+                $('.test_container').removeClass('fixed');
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
