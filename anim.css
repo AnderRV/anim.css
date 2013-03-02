@@ -36,12 +36,39 @@
 }
 
 @-webkit-keyframes horShake {
+    0%, 10%, 30%, 50%, 70%, 90%, 100% {-webkit-transform: translateX(0);}
+    20%, 60% {-webkit-transform: translateX(-10px);}
+    40%, 80% {-webkit-transform: translateX(15px);}
+}
+.horShake {
+    -webkit-animation-name: horShake;
+    -webkit-animation-duration: 0.6s !important;
+}
+
+@-webkit-keyframes horLeftShake {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateX(0);}
     40% {-webkit-transform: translateX(-30px);}
     60% {-webkit-transform: translateX(-15px);}
 }
-.horShake {
-    -webkit-animation-name: horShake;
+.horLeftShake {
+    -webkit-animation-name: horLeftShake;
+}
+
+@-webkit-keyframes shake {
+    30% { -webkit-transform: skew(-3deg, 3deg); }
+    60% { -webkit-transform: skew(3deg, -3deg); }
+}
+.shake {
+    -webkit-animation: shake 0.5s linear infinite alternate !important;
+}
+
+@-webkit-keyframes deform {
+    25% { -webkit-transform: skewX(-8deg) scale(1.1); }
+    50% { -webkit-transform: skewX( 0deg) scale(1); }
+    75% { -webkit-transform: skewX( 8deg) scale(1.1); }
+}
+.deform {
+    -webkit-animation: deform 1s linear infinite !important;
 }
 
 @-webkit-keyframes rotateInSlow {
@@ -427,5 +454,17 @@
     100% { -webkit-transform: perspective(400px) scale3d(1.05, 1.05, 1.05) rotateZ(-733deg); }
 }
 .rotateThenBlink {
-    -webkit-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear 0s infinite alternate !important;
+    -webkit-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
+}
+
+@-webkit-keyframes rotateAndShake_rot {
+    50%  { -webkit-transform: rotate(180deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes rotateAndShake_sha {
+    50% { -webkit-transform: skew(4deg, -4deg); }
+    25% { -webkit-transform: skew(-4deg, 4deg); }
+}
+.rotateAndShake {
+    -webkit-animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
 }
