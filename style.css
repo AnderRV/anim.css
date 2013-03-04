@@ -1,0 +1,112 @@
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    -moz-backface-visibility: hidden;
+    -moz-font-smoothing: subpixel-antialiased;
+
+    -ms-backface-visibility: hidden;
+    -ms-font-smoothing: subpixel-antialiased;
+
+    -o-backface-visibility: hidden;
+    -o-font-smoothing: subpixel-antialiased;
+
+    backface-visibility: hidden;
+    font-smoothing: subpixel-antialiased;
+
+    color: #345;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+
+.test_container {
+    pointer-events: none;
+    margin: 60px auto;
+    width: 100%;
+    z-index: 999;
+    
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#test_box {
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(20, 20, 90);
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+
+    width: 260px;
+    height: 70px;
+    
+    margin: 10px auto;
+    padding: 20px 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 25px #eee;
+    
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: .2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-fill-mode: both;
+    
+    -ms-animation-duration: 1s;
+    -ms-animation-delay: .2s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-fill-mode: both;
+    
+    -o-animation-duration: 1s;
+    -o-animation-delay: .2s;
+    -o-animation-timing-function: linear;
+    -o-animation-fill-mode: both;
+    
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+#test_box p {
+    margin: 0;
+}
+
+
+a.button{
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 30px;
+
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: auto;
+
+    margin: 10px 5px;
+    padding: 10px 15px;
+
+    background-color: rgb(5, 5, 40);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
+}
