@@ -13,9 +13,14 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 
     backface-visibility: hidden;
     font-smoothing: subpixel-antialiased;
+
+    color: #345;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eee;
 }
 
 .container {
+    max-width: 940px;
     margin: auto;
 }
 
@@ -24,6 +29,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     margin: 60px auto;
     width: 100%;
     z-index: 999;
+    
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    top: 0;
 }
 
 #test_box {
@@ -36,13 +46,14 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     line-height: 30px;
     text-align: center;
 
-    width: 160px;
+    width: 260px;
     height: 70px;
     
     margin: 10px auto;
     padding: 20px 10px;
 
     border-radius: 10px;
+    box-shadow: 0px 0px 50px 25px #eee;
     
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: .2s;
@@ -79,10 +90,10 @@ a.button{
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    height: 44px;
-    line-height: 20px;
+    height: 48px;
+    line-height: 30px;
 
     box-sizing: border-box;
     display: inline-block;
@@ -98,16 +109,4 @@ a.button{
     background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
     background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
     background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(2, 2, 100, 0.1));
-}
-
-@media print, screen and (max-width: 960px) {
-    #test_box {
-        box-shadow: 0px 0px 50px 25px #eee;
-    }
-    .test_container {
-        position: fixed !important;
-        right: 0;
-        left: 0;
-        top: 0;
-    }
 }
