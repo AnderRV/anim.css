@@ -1,5 +1,25 @@
 @import 'nib'
 
+@-webkit-keyframes test {
+  0%{
+    -webkit-transform: rotate(180deg) translateY(50px) translateX(50px);
+    -webkit-transform-origin: top left;
+    opacity: 0;
+    }
+  85%{
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(0%);
+    -webkit-transform-origin: bottom right;
+    opacity: 1;
+  }
+  92%{
+    -webkit-transform:translateY(15px) scale(1.03);
+  }
+}
+
+.test {
+  animation-name:test
+}
+
 @keyframes vertShake
    0%, 20%, 50%, 80%, 100%
      transform: translateY(0)
@@ -541,6 +561,121 @@
 
 .fromDeepBounce {
     animation-name: fromDeepBounce
+}
+
+@keyframes landing
+  0%
+    transform: rotate(180deg) translateY(50px) translateX(50px)
+    transform-origin: top left
+    opacity: 0
+
+  100%
+    transform: rotate(0deg) translateY(0) translateX(0)
+    transform-origin: bottom right
+    opacity: 1
+
+.landing {
+    animation-name: landing
+}
+
+@keyframes reboudLanding
+  0%
+    transform: rotate(180deg) translateY(50px) translateX(50px)
+    transform-origin: top left
+    opacity: 0
+
+  85%
+    transform: rotate(0deg) translateY(0) translateX(0)
+    transform-origin: bottom right
+    opacity: 1
+
+  92%
+    transform:translateY(10px) scale(1.01)
+
+.reboudLanding {
+    animation-name: reboudLanding
+}
+
+@keyframes softLanding
+  0%
+    transform: rotate(180deg) translateY(50px) translateX(50px)
+    transform-origin: top left
+    opacity: 0
+
+  50%
+    transform: rotate(0deg) translateY(-50px) translateX(0)
+    transform-origin: bottom right
+    opacity: 1
+
+  100%
+    transform:translateY(0)
+
+.softLanding {
+    animation-name: softLanding
+    animation-duration: 1.5s !important
+}
+
+@keyframes softLandingBounce
+  0%
+    transform: rotate(180deg) translateY(50px) translateX(50px)
+    transform-origin: top left
+    opacity: 0
+
+  50%
+    transform: rotate(0deg) translateY(-50px) translateX(0)
+    transform-origin: bottom right
+    opacity: 1
+  
+  55%
+    transform: translateY(-45px) translateX(5px)
+
+  60%
+    transform: translateY(-39px) translateX(-5px)
+
+  65%
+    transform: translateY(-36px) translateX(4px)
+
+  70%
+    transform: translateY(-31px) translateX(-4px)
+
+  75%
+    transform: translateY(-26px) translateX(3px)
+
+  80%
+    transform: translateY(-18px) translateX(-3px)
+
+  85%
+    transform: translateY(-14px) translateX(2px)
+
+  90%
+    transform: translateY(-8px) translateX(-2px)
+
+  95%
+    transform: translateY(-5px) translateX(1px)
+
+  100%
+    transform:translateY(0)
+
+.softLandingBounce {
+    animation-name: softLandingBounce
+    animation-duration: 1.5s !important
+}
+
+@keyframes diagonalEntry
+  0%
+    transform: scale(0) translateY(0px) translateX(0px) rotate(-5deg)
+    opacity: 0
+
+  30%
+    transform: scale(0.25) translateY(-250px) translateX(-250px) rotate(-15deg)
+    opacity: 0.25
+
+  100%
+    transform: scale(1) translateY(0) translateX(0)
+    opacity: 1
+
+.diagonalEntry {
+    animation-name: diagonalEntry
 }
 
 /****************** CHAINED ***********************/
