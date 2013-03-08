@@ -462,18 +462,18 @@
 }
 /****************** CHAINED ***********************/
 .rotateThenBlink {
-  -webkit-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
-  -moz-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
-  -o-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
-  -ms-animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
-  animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important;
+  -webkit-animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important;
+  -moz-animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important;
+  -o-animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important;
+  -ms-animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important;
+  animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important;
 }
 .rotateAndShake {
-  -webkit-animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
-  -moz-animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
-  -o-animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
-  -ms-animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
-  animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important;
+  -webkit-animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important;
+  -moz-animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important;
+  -o-animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important;
+  -ms-animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important;
+  animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important;
 }
 @-moz-keyframes vertShake {
   0%, 20%, 50%, 80%, 100% {

@@ -690,7 +690,7 @@
       transform: perspective(400px) scale3d(1.05, 1.05, 1.05) rotateZ(-733deg)
 
 .rotateThenBlink {
-    animation: rotateThenBlink_rot 0.5s linear, rotateThenBlink_bli 0.5s linear infinite alternate !important
+    animation: rotateThenBlink_rot 0.5s linear 0s, rotateThenBlink_bli 0.5s linear 0.5s infinite alternate !important
 }
 
 @keyframes rotateAndShake_rot
@@ -705,5 +705,5 @@
       transform: skew(4deg, -4deg)
 
 .rotateAndShake {
-    animation: rotateAndShake_rot 0.5s linear, rotateAndShake_sha 0.5s linear infinite alternate !important
+    animation: rotateAndShake_rot 0.5s linear 0s, rotateAndShake_sha 0.5s linear 0.5s infinite alternate !important
 }
