@@ -19,22 +19,24 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Anim.css</h1>
-        <p>CSS3 animations</p>
-        
-        <ul>
-          <li><a href="https://github.com/AnderRV/anim.css/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/AnderRV/anim.css/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/AnderRV/anim.css">View On <strong>GitHub</strong></a></li>
-        </ul>
+      <div style="position: absolute;">
+        <header>
+          <h1>Anim.css</h1>
+          <p>CSS3 animations</p>
+          
+          <ul>
+            <li><a href="https://github.com/AnderRV/anim.css/zipball/master">Download <strong>ZIP File</strong></a></li>
+            <li><a href="https://github.com/AnderRV/anim.css/tarball/master">Download <strong>TAR Ball</strong></a></li>
+            <li><a href="https://github.com/AnderRV/anim.css">View On <strong>GitHub</strong></a></li>
+          </ul>
 
-        <div class="test_container">
-            <div id="test_box">
-                <p>Test case</p>
-            </div>
-        </div>
-      </header>
+          <div class="test_container">
+              <div id="test_box">
+                  <p>Test case</p>
+              </div>
+          </div>
+        </header>
+      </div>
 
       <section>
         <h2>About</h2>
@@ -107,11 +109,15 @@
         <a class="button" data-test='rotateAndShake infinite'>rotateAndShake</a>
 
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/AnderRV">Ander Rodriguez</a></p>
-        <p><a href="https://github.com/AnderRV/anim.css/blob/master/LICENSE.md">Under MIT license</a></p>
-      </footer>
+
+      <div style="position: absolute;">
+        <footer>
+          <p>This project is maintained by <a href="https://github.com/AnderRV">AnderRV</a></p>
+          <p>Under <a href="https://github.com/AnderRV/anim.css/blob/master/LICENSE.md">MIT license</a></p>
+        </footer>
+      </div>
     </div>
+    
     <script src="javascripts/scale.fix.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
@@ -150,6 +156,18 @@
           testAnim(anim);
         });
       });
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39144747-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
   </body>
 </html>
