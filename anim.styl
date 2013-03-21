@@ -1,3 +1,4 @@
+/* stylus -w -c anym.styl -u nib */
 @import 'nib'
 
 @-webkit-keyframes test {
@@ -17,7 +18,7 @@
 }
 
 .test {
-  animation-name:test
+  -webkit-animation-name:test
 }
 
 @keyframes vertShake
@@ -676,6 +677,18 @@
 
 .diagonalEntry {
     animation-name: diagonalEntry
+}
+
+@keyframes flipCard
+  0%
+    transform: rotateY(0deg) perspective(400px)
+  100%
+    transform: rotateY(-180deg) perspective(400px)
+
+.flipCard {
+    animation-name: flipCard
+    transform-style: preserve-3d
+    backface-visibility: hidden !important
 }
 
 /****************** CHAINED ***********************/

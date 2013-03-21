@@ -46,6 +46,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     line-height: 30px;
     text-align: center;
 
+    position: relative;
     width: 260px;
     height: 70px;
     
@@ -83,8 +84,25 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 
 #test_box p {
     margin: 0;
+    width: 240px;
+    position: absolute;
 }
 
+#test_box p.back {
+    background-color: rgb(15, 15, 40);
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px 10px #ccc;
+
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
 a.button{
     border-radius: 5px;
